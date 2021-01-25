@@ -1,0 +1,297 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* global styling */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.om-mig, .billeder, .kontakt, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.om-mig .om-mig-indhold,
+.billeder .serv-indhold,
+.kontakt .kontakt-indhold{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: -1;
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background: black;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: #a82034;
+    transition: all 0.3s ease;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #a82034;
+}
+
+/* hjem section styling */
+.hjem{
+    display: flex;
+    background: url("../Assets/hjembanner.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.hjem .max-width{
+    margin: auto 0 auto 30px;
+}
+.hjem .hjem-indhold .text-1{
+    font-size: 27px;
+}
+.hjem .hjem-indhold .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.hjem .hjem-indhold .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.hjem .hjem-indhold .text-3 span{
+    color: #a82034;
+    font-weight: 500;
+}
+.hjem .hjem-indhold a{
+    display: inline-block;
+    background: #a82034;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #a82034;
+    transition: all 0.3s ease;
+}
+.hjem .hjem-indhold a:hover{
+    color: #a82034;
+    background: none;
+}
+
+/* om-mig section styling */
+
+.om-mig .om-mig-indhold{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.om-mig .om-mig-indhold .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.om-mig .om-mig-indhold p{
+    text-align: center;
+}
+
+/* billeder section styling */
+.billeder{
+    max-height: 3650px;
+    min-height: 3000px
+}
+/*billede skygge*/
+
+div.gallery {
+  background-color: white;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sidsterække{
+  margin-bottom: 30%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 2% 2%;
+  float: left;
+  width: 33%;
+}
+
+
+
+/* billede slut*/
+/* kontakt section styling */
+
+
+.kontakt .kontakt-indhold{
+    display: flex;
+    justify-content: center;
+}
+.kontakt .kontakt-indhold .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.kontakt .kontakt-indhold p{
+    text-align: center;
+}
+
+.kontakt .kontakt-indhold span{
+    color: #a82034;
+    font-weight: 500;
+}
+
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #a82034;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+/* responsive media query start */
+
+
+@media (max-width: 1300px) {
+    .hjem .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 850px) {
+
+  .navbar{
+      padding: 50px 0;
+  }
+  .sidsterække{
+    margin-bottom: 0;
+}
+  .responsive {
+    width: 100%;
+  }
+  .billeder{
+      height: 1850vh;
+  }
+
+    .max-width{
+        padding: 0 50px;
+    }
+        .navbar{
+            padding: 50px 0;
+    }
+
+  .navbar .menu{
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: none;
+    text-align: center;
+    padding-top: 80px;
+    }
+    .navbar .menu li{
+      padding: 0 0 0 25px;
+    }
+    .navbar .menu li a{
+      display: inline-block;
+      margin: 20px 0;
+      font-size: 25px;
+    }
+    .hjem .hjem-indhold .text-2{
+        font-size: 70px;
+    }
+    .hjem .hjem-indhold .text-3{
+        font-size: 35px;
+    }
+    .hjem .hjem-indhold a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .om-mig .om-mig-indhold{
+        width: 100%;
+    }
+    .om-mig .om-mig-indhold{
+        flex: 100%;
+    }
+    .billeder .serv-indhold{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .kontakt .kontakt-indhold{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
